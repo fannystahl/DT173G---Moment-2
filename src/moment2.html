@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moment 2 - NodeJs & Gulp</title>
+</head>
+<body>
+    <header id="mainheader">
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="moment1.html">1</a></li>
+            <li class="current"><a href="moment2.html">2</a></li>
+            <li><a href="moment3.html">3</a></li>
+            <li><a href="moment4.html">4</a></li>
+            <li><a href="moment5.html">5</a></li>
+            <li><a href="projekt.html">P</a></li>
+        </ul>
+    </header>
+    
+    <div class="wrapper">
+        <h1>Moment 2 - NodeJs & Gulp</h1>
+
+        <section id="purpose">
+            <h2>Syfte</h2>
+                <p>Syftet med uppgiften är att:</p>
+
+                <ul>
+                    <li>Få en inblick i Node.js.</li>
+                    <li>Kunna automatisera uppgifter med något kommandobaserat verktyg i Node.js, med syfte att förenkla utvecklingsarbetet av en webbplats.</li>
+                    <li>Skapa en grundstruktur som sedan kan användas som grund till kommande webbplatser.</li>
+                </ul>
+
+                <p>De nya kunskaperna kommer du sedan att kunna applicera i din egen projektwebbplats.</p>
+        </section>
+            
+        <section id="steps">
+
+            <h2>Moment 2 – Automatisera uppgifter</h2>
+            <p>Här ska du skapa en grundstruktur för för webbutveckling kompletterat med med automatisering av uppgifter. Den ska vara för en webbplats som innehåller HTML, CSS, JavaScript och bilder.</p>
+            <p>Skapa först en grundstruktur med en index.html-fil samt underkataloger för CSS, JavaScript och bilder (döp dessa till lämpliga namn, förslagsvis på engelska).</p>
+            <p>Skapa även en katalog för publicering (förslagsvis "pub") dit färdiga filer flyttas, färdiga för publicering.</p>
+                
+            <h2>Automatiseringen ska till exempel ge följande:</h2>  
+            <p>Samtliga filer som ingår i webbplatsen ska kopieras till din katalog för publicering.</p>
+            <p>Det ska finnas en automatisk koll på om filer ändras i arbetskatalogen. Om du till exempel ändrar i en CSS-fil, ska den slås ihop med övriga CSS-filer. Den konkatenerade filen ska i sin tur minimeras och läggas på lämplig plats för testning. När detta händer ska en webbserver känna av att det skett en förändring, och signalera till webbläsaren att uppdatera.</p>
+            <p>Du kan till stor del själv välja vad du vill automatisera men det finns några tasks som du måste ha med.</p>
+            
+            <h2>Du ska minst ha tasks som:</h2>
+            <ul>
+                <li>Konkatenerar och minimerar samtliga CSS-källkodsfiler i en given katalog till en CSS-resultatfil. Resultatfilen läggs på lämpligt ställe för testning / livereload / publicering.</li>
+                <li>Gör på samma sätt som ovan med JavaScript-filer.</li>
+                <li>Det är inget krav på att bild- och html-filer komprimeras / minimeras / konkateneras men om källkodsfilerna förändras så ska de kopieras till resultatfiler på ett lämpligt ställe för testning / livereload / publicering.</li>
+            </ul>
+
+            <h2>Övriga krav:</h2>
+            <ul>
+                <li>Du ska använda det node.js-baserade verktygen Gulp för att skapa automatisering</li>
+                <li>Koden ska vara väl kommenterad.</li>
+                <li>Filstrukturen ska vara väl strukturerad.</li>
+                <li>CSS-koden ska vara uppdelad i flera källkodsfiler i arbetskatalogen, detsamma gäller för JavaScript.</li>
+                <li>Det ska finnas en automatik som genomför lämpliga tasks om källkodsfilerna ändras.</li>
+                <li>Det ska finnas en livereload som körs om någon av resultatfilerna förändras.</li>
+                <li>Projektet ska kunna köras på vilken dator som helst som har node.js och npm installerat.</li>
+            </ul>
+            <p>Om du använder några fler verktyg ( T.ex. Less, Sass, html-minifier, bildkomprimering) så kan du även lägga till automatik för dem.</p>
+            <p>Experimentera gärna!</p>
+
+        </section>
+
+        <section id="hand-in">
+            <h2>Redovisning</h2>
+            <p>Skapa ett README.md-dokument där du kortfattat beskriver:</p>
+
+            <ul>
+            <li>Vad automatiserings-processens syfte är.</li>
+            <li>Anger om vilka paket och verktyg du använt, och varför du valt just dessa.</li>
+            <li>Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår.</li>
+            <li>Ta även med om du lagt till något extra.</li>
+            </ul>
+        </section>
+
+        <div class="images">
+            <img src="img/cat1.png">
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

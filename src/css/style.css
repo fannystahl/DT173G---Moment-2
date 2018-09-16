@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    background-color: #272838;
+    font-size: 1.2rem;
+    color: #272838;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fdfdfd;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+#purpose ul, #steps ul, #hand-in li {
+    list-style: disc;
+    margin-left: 5px;
+    max-width: 100%;
+}
+
+#purpose li, #steps li, #hand-in li {
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+p {
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Home page buttons */
+
+#home-page-menu {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#home-page-menu {
+    text-align: center;
+}
+
+#link-buttons li {
+    display: block;
+    background-color: #FFC568;
+    box-shadow: 0 10px #DB894A;
+    border-radius: 10px;
+    font-size: 75px;
+    font-weight: bold;
+    width: 130px;
+    height: 130px;
+    margin: 25px auto;
+}
+
+#link-buttons li a, #mainheader ul li a {
+    text-decoration: none;
+    color: #272838;
+    position: relative;
+    top: 15%;
+}
+
+/* Home page and header menu */
+
+#link-buttons li:hover, #mainheader ul li:hover {
+    background-color: #ffda9e;
+}
+
+#link-buttons li:active, #mainheader ul li:active {
+    position: relative;
+    top: 10px;
+}
+
+/* Header menu */
+
+#mainheader {
+    padding: 20px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#mainheader ul li {
+    display: inline-block;
+    background-color: #FFC568;
+    box-shadow: 0 5px #DB894A;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#mainheader ul li:first-of-type {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+#mainheader ul li:first-of-type a {
+    color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+#mainheader {
+    text-align: center;
+}
+
+/* Moment pages */
+
+#purpose {
+    background-color: #FFC568;
+    padding: 20px;
+}
+
+#steps {
+    background-color: #fdfdfd;
+    padding: 20px;
+}
+
+#hand-in {
+    background-color: #bdbdbd;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.images {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 400px) {
+
+    /* Heading */
+    h1 {
+        font-size: 40px;
+        color: #fdfdfd;
+        margin-bottom: 10px;
+    }    
+
+}
+
+@media screen and (min-width: 600px) {
+
+    /* Home page buttons */
+
+    #home-page-menu {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    #link-buttons li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    /* Header menu */
+
+    #mainheader {
+        max-width: 9999px;
+    }
+
+    #mainheader ul li:first-of-type {
+        display: inline-block;
+        position: relative;
+        top: 20px;
+
+    }
+
+    #purpose, #steps, #hand-in {
+        padding: 40px;
+    }
+
+    #purpose ul, #steps ul, #hand-in li {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    #home-page-menu {
+        max-width: 9999px;
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -450px;
+        text-align: left;
+    }
+
+    #link-buttons li {
+        display: inline-block;
+        margin: 5px;
+        text-align: center;
+    }
+
+}

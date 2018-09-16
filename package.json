@@ -1,0 +1,21 @@
+{
+  "name": "moment2",
+  "version": "1.0.0",
+  "description": "En webbplats för moment 2 i Webbutveckling III",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fanny Ståhl",
+  "license": "ISC"
+}
