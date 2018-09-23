@@ -1,5 +1,5 @@
-# DT173G---Moment-2
-A repository used for the course Webbutveckling III - Moment 2
+# DT173G---Moment-2, Moment 3
+A repository used for the course Webbutveckling III - Moment 2 and Moment 3. It now includes SASS!
 
 ## What is the purpose of automation?
 
