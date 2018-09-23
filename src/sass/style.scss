@@ -1,0 +1,347 @@
+/* Fanny Ståhl 2018 */
+
+/* ---- Variables */
+/* Fonts */
+$font-stack: Arial, Helvetica, sans-serif;
+
+/* Colours*/
+$white: #fdfdfd;
+$yellow: #FFC568;
+$grey: #bdbdbd;
+$black: #272838;
+
+/* Media breakpoints */
+$breakpoint-small: 400px;
+$breakpoint-med-small: 600px;
+$breakpoint-med: 950px;
+
+/* ---- Mixins */
+
+/* Border radius, https://web-design-weekly.com/2013/05/12/handy-sass-mixins/ */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    /* Stop background-colour from leaking outside */
+    background-clip: padding-box;
+}
+
+/* ---- Imports */
+@import 'reset';
+
+/* Placeholder extends */
+%margin10-0 {
+    margin: 10px 0;
+}
+
+/* ---- CSS */
+
+* {
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body {
+    background-color: $black;
+    font-size: 1.2rem;
+    color: $black;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 30px;
+    color: $white;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+h3 {
+    @extend %margin10-0;
+}
+
+h4 {
+    @extend %margin10-0;
+}
+
+ul {
+    padding: 0;
+}
+
+p {
+    max-width: 500px;
+    @extend %margin10-0;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Home page buttons */
+
+#home-page-menu {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#link-buttons li {
+    display: block;
+    background-color: $yellow;
+    box-shadow: 0 10px darken($yellow, 25%);
+    font-size: 75px;
+    font-weight: bold;
+    width: 130px;
+    height: 130px;
+    margin: 25px auto;
+    @include border-radius(10px);
+
+    a {
+        text-decoration: none;
+        color: $black;
+        position: relative;
+        top: 15%;
+    }
+}
+
+#link-buttons li:hover {
+    background-color: lighten($yellow, 10%);
+}
+
+#link-buttons li:active {
+    position: relative;
+    top: 10px;
+}
+
+/* Header menu */
+
+#mainheader {
+    text-align: center;
+    padding: 20px;
+    max-width: 200px;
+    margin: 0 auto;
+
+    ul li {
+
+        display: inline-block;
+        background-color: $yellow;
+        box-shadow: 0 5px darken($yellow, 25%);
+        font-size: 30px;
+        font-weight: bold;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        @include border-radius(10px);
+
+        a {
+            text-decoration: none;
+            color: $black;
+            position: relative;
+            top: 15%;
+        }
+    }
+
+    ul li:hover {
+        background-color: lighten($yellow, 10%);
+    }
+
+    ul li:active {
+        position: relative;
+        top: 5px;
+    }
+
+    ul li:first-of-type {
+        background-color: transparent;
+        box-shadow: none;
+        width: auto;
+        height: auto;
+        display: block;
+        @include border-radius(0);
+
+        a {
+            color: $white;
+            margin-bottom: 20px;
+            text-decoration: none;
+            position: relative;
+            top: 15%;
+        }
+    }
+}
+
+/* Moment pages */
+
+#purpose {
+    background-color: $yellow;
+    padding: 20px;
+
+    ul {
+        list-style: disc;
+        margin-left: 5px;
+        max-width: 100%;
+    }
+
+    li {
+        max-width: 500px;
+        @extend %margin10-0;
+    }
+}
+
+#steps {
+    background-color: $white;
+    padding: 20px;
+
+    ul {
+        list-style: disc;
+        margin-left: 5px;
+        max-width: 100%;
+    }
+
+    ol {
+        list-style: decimal;
+        margin-left: 5px;
+        max-width: 100%;
+    }
+
+    li {
+        max-width: 500px;
+        @extend %margin10-0;
+    }
+}
+
+#hand-in {
+    background-color: $grey;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    ul {
+        list-style: disc;
+        margin-left: 5px;
+        max-width: 100%;
+    }
+
+    li {
+        max-width: 500px;
+        margin: 10px 0;
+    }
+}
+
+.images {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.check {
+    width: 50px;
+    float: right;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 400px) {
+
+    /* Heading */
+
+    h1 {
+        font-size: 40px;
+        color: $white;
+        margin-bottom: 10px;
+    }    
+
+}
+
+@media screen and (min-width: 600px) {
+
+    /* Home page buttons */
+
+    #home-page-menu {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    #link-buttons li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    /* Header menu */
+
+    #mainheader {
+        max-width: 9999px;
+
+        ul li:first-of-type {
+            display: inline-block;
+            position: relative;
+            top: 20px;
+        }
+    }
+
+    #purpose {
+        padding: 40px;
+
+        ul {
+            margin-left: 40px;
+        }
+
+        ol {
+            margin-left: 40px;
+        }
+    }
+
+    #steps {
+        padding: 40px;
+
+        ul {
+            margin-left: 40px;
+        }
+
+        ol {
+            margin-left: 40px;
+        }
+    }
+
+    #hand-in {
+        padding: 40px;
+
+        ul {
+            margin-left: 40px;
+        }
+
+        ol {
+            margin-left: 40px;
+        }
+    }
+
+    .check {
+        width: 75px;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    #home-page-menu {
+        max-width: 9999px;
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -450px;
+        text-align: left;
+    }
+
+    #link-buttons li {
+        display: inline-block;
+        margin: 5px;
+        text-align: center;
+    }
+
+}
